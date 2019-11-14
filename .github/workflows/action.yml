@@ -13,7 +13,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '2.2.103'
-    - run: dotnet build azfunction.csproj
+    - run: dotnet build azfunction.csproj --output './output'
     - uses: Azure/functions-action@v1
       id: fa
       with:
