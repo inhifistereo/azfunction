@@ -12,7 +12,6 @@ jobs:
     - name: Setup dotnet
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '3.0.100'
-    - run: dotnet restore
+        dotnet-version: '2.1.13'
     - run: dotnet build
     
